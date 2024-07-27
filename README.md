@@ -22,3 +22,50 @@ TicketService: Provides high-level services to book and cancel tickets using com
 AppLogger: Provides logging functionality to track operations and errors.
 App: The main entry point for the application, where user interactions are handled.
 ![image](https://github.com/user-attachments/assets/8ad28e95-c1a7-452c-af2e-c7bfa53565ac)
+
+CREATIONAL PATTERNS
+ Computer Builder with Factory and Logging
+ 1. Computer Class
+Represents a fully configured computer object.
+
+2. ComputerBuilder Class
+ Facilitates the step-by-step construction of Computer objects.
+
+3. ComputerFactory Class
+ Provides methods for creating predefined Computer configurations.
+
+4. LoggerUtil Class
+Centralized logging utility for managing application logs.
+
+5. DynamicMenu Class
+ Interface for user interaction to create and manage Computer objects.
+![image](https://github.com/user-attachments/assets/e5bd828c-2832-4d0a-815f-c141cfda4e1d)
+
+Cloning UserProfile with Prototpe Pattern
+UserProfile: Abstract base class defining user profile properties and the clone() method for cloning instances.
+
+BasicUserProfile: Concrete implementation of UserProfile for basic profiles, including cloning functionality.
+
+PremiumUserProfile: Concrete UserProfile implementation for premium profiles with additional features and cloning capability.
+
+UserProfileRegistry: Manages and provides cloning of user profile prototypes based on their type.
+
+UserProfileDemo: Demonstrates the usage of UserProfileRegistry for creating, cloning, and modifying user profiles.
+![image](https://github.com/user-attachments/assets/0a6bb936-3f30-4caa-93a5-fade09136654)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
