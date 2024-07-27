@@ -54,6 +54,31 @@ UserProfileDemo: Demonstrates the usage of UserProfileRegistry for creating, clo
 ![image](https://github.com/user-attachments/assets/0a6bb936-3f30-4caa-93a5-fade09136654)
 
 
+STRUCTURAL PATTERNS
+Coffee Shop-Decorator Pattern 
+The Coffee Shop Decorator Pattern project demonstrates the use of the Decorator Design Pattern to dynamically add features to a coffee object. This pattern allows for flexible and extensible modifications to coffee objects without altering their base structure. Users can interactively customize their coffee by adding features such as milk, sugar, whipped cream, chocolate, and vanilla, and see the resulting changes in description and cost.
+Coffee: An abstract class that serves as the base type for coffee objects. It defines the core methods getDescription() and cost() that must be implemented by all concrete coffee types.
+
+BasicCoffee: A concrete implementation of the Coffee class representing a standard coffee with a fixed base cost of $5.00. It provides basic functionality without any additional features.
+
+CoffeeDecorator: An abstract class that extends Coffee and serves as the base class for all decorators. It allows for adding extra functionality to the coffee objects by implementing the getDescription() and cost() methods in subclasses.
+
+MilkDecorator: A concrete decorator that adds milk to the coffee. It includes logic for specifying the amount of milk and calculating the additional cost based on the milk quantity.
+
+SugarDecorator: A concrete decorator that adds sugar to the coffee. It includes logic for specifying the amount of sugar and calculating the additional cost based on the sugar quantity.
+
+WhippedCreamDecorator: A concrete decorator that adds whipped cream to the coffee. It modifies the coffee’s description and adds the cost of whipped cream.
+
+ChocolateDecorator: A concrete decorator that adds chocolate to the coffee. It modifies the coffee’s description and adds the cost of chocolate.
+
+VanillaDecorator: A concrete decorator that adds vanilla to the coffee. It modifies the coffee’s description and adds the cost of vanilla.
+
+App: The main class that serves as the entry point for the application. It provides an interactive menu for users to customize their coffee by adding various features, and then displays the updated coffee description and cost.
+![imgonline-com-ua-twotoone-fTFTNKhRxjatU91](https://github.com/user-attachments/assets/ea49260e-25db-4bcc-ae3e-340175f16d91)
+
+
+
+
 
 
 
