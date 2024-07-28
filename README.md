@@ -71,22 +71,39 @@ App: The main class that serves as the entry point for the application. It provi
 
 ### MessageService with BuilderPattern
 
+
+The **Message Service** project utilizes the **Builder Pattern** to construct various messaging instances efficiently. `App.java` demonstrates the creation and usage of different message types, including `Email`, `SMS`, and `WhatsApp`. The `Message` class provides a foundation for setting essential fields, while `MessagingService.java` offers common functionalities across message types. Specific message types like `TextMessage` and `MultimediaMessage` extend the base class to handle content management and multimedia features, ensuring flexible and modular message creation.
+
+
 App.java
  Demonstrates the creation and usage of various messaging service instances.
+ 
 Email.java
  Represents an email message with recipient, subject, and body fields.
+ 
 Message.java
  Defines methods for setting recipient, subject, and body for messages.
+ 
+ 
 MessagingService.java
  Provides common messaging functionalities for different message types.
+ 
+ 
 SMS.java
  Represents an SMS message with recipient and content fields.
+ 
+ 
 MultimediaMessage.java
  Extends Message to include multimedia content like images or videos.
+ 
+ 
 TextMessage.java
  Represents a basic text message with content management.
+ 
+ 
 WhatsApp.java
  Represents a WhatsApp message with recipient and content fields.
+ 
 
  # Astronaut Daily Schedule Organizer
 
