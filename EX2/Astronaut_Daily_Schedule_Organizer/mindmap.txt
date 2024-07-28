@@ -1,0 +1,54 @@
+Astronaut Daily Schedule Organizer
+|
+|-- Functional Requirements
+|   |-- Mandatory
+|   |   |-- Add Task
+|   |   |-- Remove Task
+|   |   |-- View Tasks (sorted by start time)
+|   |   |-- Validate Task Overlaps
+|   |   |-- Error Handling
+|   |
+|   |-- Optional
+|       |-- Edit Task
+|       |-- Mark Task as Completed
+|       |-- View Tasks by Priority
+|
+|-- Non-Functional Requirements
+|   |-- Graceful Exception Handling
+|   |-- Performance Optimization
+|   |-- Logging Mechanism
+|
+|-- Design Patterns
+|   |-- Singleton Pattern
+|   |   |-- ScheduleManager (Single Instance)
+|   |
+|   |-- Factory Pattern
+|   |   |-- TaskFactory (Create Task Objects)
+|   |
+|   |-- Observer Pattern
+|       |-- TaskConflictNotifier (Notify on Conflicts)
+|
+|-- Components
+|   |-- Task
+|   |   |-- Attributes: Description, Start Time, End Time, Priority, Status
+|   |   |-- Methods: Getters, Setters, toString
+|   |
+|   |-- ScheduleManager
+|   |   |-- Attributes: List<Task>, TaskConflictNotifier
+|   |   |-- Methods: addTask(), removeTask(), viewTasks(), editTask(), markTaskAsCompleted(), viewTasksByPriority()
+|   |   |-- Validation: validateTask(), taskConflicts(), findTaskByDescription()
+|   |
+|   |-- TaskFactory
+|   |   |-- Methods: createTask()
+|   |
+|   |-- TaskConflictNotifier
+|   |   |-- Methods: update()
+|   |
+|   |-- TaskLogger (Optional)
+|   |   |-- Methods: log()
+|   |
+|   |-- TaskPersistenceManager (Optional)
+|   |   |-- Methods: saveTasks(), loadTasks()
+|   |
+|   |-- Main
+|       |-- Methods: main() (Console Interface)
