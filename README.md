@@ -5,6 +5,7 @@ EX 1
 BEHAVIOURAL PATTERNS :
 
 HOME AUTOMATION WITH LIGHT USECASE
+
 Command.java: Defines the Command interface with execute() and undo() methods, ensuring consistency for command objects.
 Light.java: Represents the Light class with methods to turn the light on and off, acting as the "receiver" in the pattern.
 LightOnCommand.java: Implements the Command interface to turn a specific light on, and includes an undo() method to turn it off.
@@ -14,6 +15,7 @@ RemoteControl.java: Manages and executes command objects, serving as the "invoke
 
 
 CUSTOMER SUPPORT TICKET MANAEMENT SYSTEM :
+
 The Ticket Management System allows users to book, cancel, and check the availability of tickets. It includes:
 
 Ticket: Represents a ticket with properties such as event name, total tickets, and available tickets.
@@ -24,7 +26,9 @@ App: The main entry point for the application, where user interactions are handl
 ![image](https://github.com/user-attachments/assets/8ad28e95-c1a7-452c-af2e-c7bfa53565ac)
 
 CREATIONAL PATTERNS :
+
 Question creator with Factory Pattern :-
+
 The primary goal is to provide a flexible and extensible framework for adding new question types without modifying the existing codebase.
 Question.java: Interface defining methods for adding questions, answers, and marks for any question type.
 
@@ -41,6 +45,7 @@ Main.java: Entry point of the application demonstrating the use of QuestionFacto
 
 
 Cloning UserProfile with Prototpe Pattern :-
+
 UserProfile: Abstract base class defining user profile properties and the clone() method for cloning instances.
 
 BasicUserProfile: Concrete implementation of UserProfile for basic profiles, including cloning functionality.
@@ -54,7 +59,9 @@ UserProfileDemo: Demonstrates the usage of UserProfileRegistry for creating, clo
 
 
 STRUCTURAL PATTERNS :
+
 Coffee Shop-Decorator Pattern :-
+
 The Coffee Shop Decorator Pattern project demonstrates the use of the Decorator Design Pattern to dynamically add features to a coffee object. This pattern allows for flexible and extensible modifications to coffee objects without altering their base structure. Users can interactively customize their coffee by adding features such as milk, sugar, whipped cream, chocolate, and vanilla, and see the resulting changes in description and cost.
 Coffee: An abstract class that serves as the base type for coffee objects. It defines the core methods getDescription() and cost() that must be implemented by all concrete coffee types.
 
@@ -70,14 +77,13 @@ WhippedCreamDecorator: A concrete decorator that adds whipped cream to the coffe
 
 ChocolateDecorator: A concrete decorator that adds chocolate to the coffee. It modifies the coffee’s description and adds the cost of chocolate.
 
-VanillaDecorator: A concrete decorator that adds vanilla to the coffee. It modifies the coffee’s description and adds the cost of vanilla.
 
 App: The main class that serves as the entry point for the application. It provides an interactive menu for users to customize their coffee by adding various features, and then displays the updated coffee description and cost.
 ![imgonline-com-ua-twotoone-fTFTNKhRxjatU91](https://github.com/user-attachments/assets/ea49260e-25db-4bcc-ae3e-340175f16d91)
 
 
 
-MessageService
+MessageService with BuilderPattern
 
 App.java
  Demonstrates the creation and usage of various messaging service instances.
