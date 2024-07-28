@@ -2,7 +2,7 @@
 
 EX 1
 
-BEHAVIOURAL PATTERNS
+BEHAVIOURAL PATTERNS :
 
 HOME AUTOMATION WITH LIGHT USECASE
 Command.java: Defines the Command interface with execute() and undo() methods, ensuring consistency for command objects.
@@ -13,7 +13,7 @@ RemoteControl.java: Manages and executes command objects, serving as the "invoke
 ![image](https://github.com/user-attachments/assets/e1e8d3c2-02d8-444c-b893-e5b058536e5c)
 
 
-CUSTOMER SUPPORT TICKET MANAEMENT SYSTEM
+CUSTOMER SUPPORT TICKET MANAEMENT SYSTEM :
 The Ticket Management System allows users to book, cancel, and check the availability of tickets. It includes:
 
 Ticket: Represents a ticket with properties such as event name, total tickets, and available tickets.
@@ -23,8 +23,8 @@ AppLogger: Provides logging functionality to track operations and errors.
 App: The main entry point for the application, where user interactions are handled.
 ![image](https://github.com/user-attachments/assets/8ad28e95-c1a7-452c-af2e-c7bfa53565ac)
 
-CREATIONAL PATTERNS
-Question creator with Factory Pattern
+CREATIONAL PATTERNS :
+Question creator with Factory Pattern :-
 The primary goal is to provide a flexible and extensible framework for adding new question types without modifying the existing codebase.
 Question.java: Interface defining methods for adding questions, answers, and marks for any question type.
 
@@ -40,7 +40,7 @@ Main.java: Entry point of the application demonstrating the use of QuestionFacto
 ![image](https://github.com/user-attachments/assets/be2de8cd-f1d2-4fd7-bd0d-10ba54a72d46)
 
 
-Cloning UserProfile with Prototpe Pattern
+Cloning UserProfile with Prototpe Pattern :-
 UserProfile: Abstract base class defining user profile properties and the clone() method for cloning instances.
 
 BasicUserProfile: Concrete implementation of UserProfile for basic profiles, including cloning functionality.
@@ -53,8 +53,8 @@ UserProfileDemo: Demonstrates the usage of UserProfileRegistry for creating, clo
 ![image](https://github.com/user-attachments/assets/0a6bb936-3f30-4caa-93a5-fade09136654)
 
 
-STRUCTURAL PATTERNS
-Coffee Shop-Decorator Pattern 
+STRUCTURAL PATTERNS :
+Coffee Shop-Decorator Pattern :-
 The Coffee Shop Decorator Pattern project demonstrates the use of the Decorator Design Pattern to dynamically add features to a coffee object. This pattern allows for flexible and extensible modifications to coffee objects without altering their base structure. Users can interactively customize their coffee by adding features such as milk, sugar, whipped cream, chocolate, and vanilla, and see the resulting changes in description and cost.
 Coffee: An abstract class that serves as the base type for coffee objects. It defines the core methods getDescription() and cost() that must be implemented by all concrete coffee types.
 
@@ -74,6 +74,29 @@ VanillaDecorator: A concrete decorator that adds vanilla to the coffee. It modif
 
 App: The main class that serves as the entry point for the application. It provides an interactive menu for users to customize their coffee by adding various features, and then displays the updated coffee description and cost.
 ![imgonline-com-ua-twotoone-fTFTNKhRxjatU91](https://github.com/user-attachments/assets/ea49260e-25db-4bcc-ae3e-340175f16d91)
+
+
+
+MessageService
+
+App.java
+ Demonstrates the creation and usage of various messaging service instances.
+Email.java
+ Represents an email message with recipient, subject, and body fields.
+Message.java
+ Defines methods for setting recipient, subject, and body for messages.
+MessagingService.java
+ Provides common messaging functionalities for different message types.
+SMS.java
+ Represents an SMS message with recipient and content fields.
+MultimediaMessage.java
+ Extends Message to include multimedia content like images or videos.
+TextMessage.java
+ Represents a basic text message with content management.
+WhatsApp.java
+ Represents a WhatsApp message with recipient and content fields.
+ ![image](https://github.com/user-attachments/assets/ad7b48ec-079a-494a-8657-e1ad1ae74388)
+
 
 
 
