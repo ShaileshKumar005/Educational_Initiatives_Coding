@@ -24,22 +24,21 @@ App: The main entry point for the application, where user interactions are handl
 ![image](https://github.com/user-attachments/assets/8ad28e95-c1a7-452c-af2e-c7bfa53565ac)
 
 CREATIONAL PATTERNS
- Computer Builder with Factory and Logging
- 1. Computer Class
-Represents a fully configured computer object.
+Question creator with Factory Pattern
+The primary goal is to provide a flexible and extensible framework for adding new question types without modifying the existing codebase.
+Question.java: Interface defining methods for adding questions, answers, and marks for any question type.
 
-2. ComputerBuilder Class
- Facilitates the step-by-step construction of Computer objects.
+Blank.java: Concrete class implementing the Question interface for creating and managing Blank questions.
 
-3. ComputerFactory Class
- Provides methods for creating predefined Computer configurations.
+Dropdown.java: Concrete class implementing the Question interface for creating and managing Dropdown questions.
 
-4. LoggerUtil Class
-Centralized logging utility for managing application logs.
+MCQ.java: Concrete class implementing the Question interface for creating and managing Multiple Choice Questions (MCQs).
 
-5. DynamicMenu Class
- Interface for user interaction to create and manage Computer objects.
-![image](https://github.com/user-attachments/assets/e5bd828c-2832-4d0a-815f-c141cfda4e1d)
+QuestionFactory.java: Factory class responsible for creating instances of different Question types based on the input type.
+
+Main.java: Entry point of the application demonstrating the use of QuestionFactory to create and manage different types of questions.
+![image](https://github.com/user-attachments/assets/be2de8cd-f1d2-4fd7-bd0d-10ba54a72d46)
+
 
 Cloning UserProfile with Prototpe Pattern
 UserProfile: Abstract base class defining user profile properties and the clone() method for cloning instances.
