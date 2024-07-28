@@ -2,15 +2,16 @@
 
 # EX 1
 
-# BEHAVIOURAL PATTERNS :
+## BEHAVIOURAL PATTERNS :
 
 HOME AUTOMATION WITH LIGHT USECASE
 
-Command.java: Defines the Command interface with execute() and undo() methods, ensuring consistency for command objects.
-Light.java: Represents the Light class with methods to turn the light on and off, acting as the "receiver" in the pattern.
-LightOnCommand.java: Implements the Command interface to turn a specific light on, and includes an undo() method to turn it off.
-LightOffCommand.java: Implements the Command interface to turn a specific light off, and includes an undo() method to turn it on.
-RemoteControl.java: Manages and executes command objects, serving as the "invoker" that triggers commands based on user input.
+Customer Support Ticket Management
+The Customer Support Ticket Management system uses the Observer pattern to notify relevant parties about ticket updates and the Chain of Responsibility pattern to route tickets through various handlers based on their type or severity. This design enables real-time updates and flexible ticket processing.
+
+Home Automation - Light Use Case
+The Home Automation - Light Use Case leverages the Command pattern to encapsulate light control operations as commands and the Strategy pattern to manage different light control algorithms based on user preferences or environmental conditions. This setup provides flexible and dynamic lighting management.
+
 ![image](https://github.com/user-attachments/assets/e1e8d3c2-02d8-444c-b893-e5b058536e5c)
 
 
@@ -25,7 +26,7 @@ AppLogger: Provides logging functionality to track operations and errors.
 App: The main entry point for the application, where user interactions are handled.
 ![image](https://github.com/user-attachments/assets/8ad28e95-c1a7-452c-af2e-c7bfa53565ac)
 
-CREATIONAL PATTERNS :
+## CREATIONAL PATTERNS :
 
 Question creator with Factory Pattern :-
 
@@ -58,7 +59,7 @@ UserProfileDemo: Demonstrates the usage of UserProfileRegistry for creating, clo
 ![image](https://github.com/user-attachments/assets/0a6bb936-3f30-4caa-93a5-fade09136654)
 
 
-STRUCTURAL PATTERNS :
+## STRUCTURAL PATTERNS :
 
 Coffee Shop-Decorator Pattern :-
 
