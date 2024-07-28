@@ -4,30 +4,17 @@
 
 # BEHAVIOURAL PATTERNS :
 
-HOME AUTOMATION WITH LIGHT USECASE
 
-Customer Support Ticket Management
+### Customer Support Ticket Management
 The Customer Support Ticket Management system uses the Observer pattern to notify relevant parties about ticket updates and the Chain of Responsibility pattern to route tickets through various handlers based on their type or severity. This design enables real-time updates and flexible ticket processing.
 
-Home Automation - Light Use Case
+### Home Automation - Light Use Case
 The Home Automation - Light Use Case leverages the Command pattern to encapsulate light control operations as commands and the Strategy pattern to manage different light control algorithms based on user preferences or environmental conditions. This setup provides flexible and dynamic lighting management.
-
-
-
-CUSTOMER SUPPORT TICKET MANAEMENT SYSTEM :
-
-The Ticket Management System allows users to book, cancel, and check the availability of tickets. It includes:
-
-Ticket: Represents a ticket with properties such as event name, total tickets, and available tickets.
-TicketManager: Manages the collection of tickets and provides methods to add, get, and remove tickets.
-TicketService: Provides high-level services to book and cancel tickets using command objects.
-AppLogger: Provides logging functionality to track operations and errors.
-App: The main entry point for the application, where user interactions are handled.
 
 
 # CREATIONAL PATTERNS :
 
-Question creator with Factory Pattern :-
+### Question creator with Factory Pattern :-
 
 The primary goal is to provide a flexible and extensible framework for adding new question types without modifying the existing codebase.
 Question.java: Interface defining methods for adding questions, answers, and marks for any question type.
@@ -44,7 +31,7 @@ Main.java: Entry point of the application demonstrating the use of QuestionFacto
 
 
 
-Cloning UserProfile with Prototpe Pattern :-
+### Cloning UserProfile with Prototpe Pattern :-
 
 UserProfile: Abstract base class defining user profile properties and the clone() method for cloning instances.
 
@@ -60,7 +47,7 @@ UserProfileDemo: Demonstrates the usage of UserProfileRegistry for creating, clo
 
 # STRUCTURAL PATTERNS :
 
-Coffee Shop-Decorator Pattern :-
+### Coffee Shop-Decorator Pattern :-
 
 The Coffee Shop Decorator Pattern project demonstrates the use of the Decorator Design Pattern to dynamically add features to a coffee object. This pattern allows for flexible and extensible modifications to coffee objects without altering their base structure. Users can interactively customize their coffee by adding features such as milk, sugar, whipped cream, chocolate, and vanilla, and see the resulting changes in description and cost.
 
@@ -82,9 +69,7 @@ ChocolateDecorator: A concrete decorator that adds chocolate to the coffee. It m
 App: The main class that serves as the entry point for the application. It provides an interactive menu for users to customize their coffee by adding various features, and then displays the updated coffee description and cost.
 
 
-
-
-MessageService with BuilderPattern
+### MessageService with BuilderPattern
 
 App.java
  Demonstrates the creation and usage of various messaging service instances.
