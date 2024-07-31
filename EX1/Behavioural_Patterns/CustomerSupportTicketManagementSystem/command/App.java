@@ -1,4 +1,4 @@
-package Educational_Initiatives_Coding.EX1.CustomerSupportTicketManagementSystem.command;
+package Educational_Initiatives_Coding.EX1.CustomerSupportTicketManagementSystem;
 
 import java.util.Scanner;
 
