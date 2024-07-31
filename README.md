@@ -104,7 +104,7 @@ TextMessage.java
 WhatsApp.java
  Represents a WhatsApp message with recipient and content fields.
  
-
+ # MINI PROJECT
  # Astronaut Daily Schedule Organizer
 
 ## Project Overview
