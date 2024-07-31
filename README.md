@@ -69,40 +69,50 @@ ChocolateDecorator: A concrete decorator that adds chocolate to the coffee. It m
 App: The main class that serves as the entry point for the application. It provides an interactive menu for users to customize their coffee by adding various features, and then displays the updated coffee description and cost.
 
 
-### MessageService with BuilderPattern
+### MessageService with BridgerPattern
 
 
-The **Message Service** project utilizes the **Builder Pattern** to construct various messaging instances efficiently. `App.java` demonstrates the creation and usage of different message types, including `Email`, `SMS`, and `WhatsApp`. The `Message` class provides a foundation for setting essential fields, while `MessagingService.java` offers common functionalities across message types. Specific message types like `TextMessage` and `MultimediaMessage` extend the base class to handle content management and multimedia features, ensuring flexible and modular message creation.
+The **Message Service** project implements the **Bridge Pattern**, a structural design pattern that separates an abstraction from its implementation. This separation allows both the abstraction and its implementation to evolve independently. The Bridge Pattern is particularly effective for managing complexity when both the abstractions and their implementations need to vary.
+
+## Key Components
+
+### Abstraction
+
+- **`Message.java`**:
+  - Acts as the abstraction layer in the Bridge Pattern.
+  - Holds a reference to a `MessagingService` object.
+  - Defines high-level operations for sending messages and delegates the actual sending to the `MessagingService` instance.
+
+### Refined Abstractions
+
+- **`Email.java`**, **`SMS.java`**, **`WhatsApp.java`**:
+  - Concrete subclasses of `Message`.
+  - Represent different types of messages (Email, SMS, WhatsApp).
+  - Use the `MessagingService` to handle the specifics of message sending.
+
+### Implementor
+
+- **`MessagingService.java`**:
+  - An interface that declares the `sendMessage(String message)` method.
+  - Defines the contract for sending messages.
+
+### Concrete Implementors
+
+- **`EmailService.java`**, **`SMSService.java`**, **`WhatsAppService.java`**:
+  - Implement the `MessagingService` interface.
+  - Each class provides specific logic for sending messages through different channels (Email, SMS, WhatsApp).
 
 
-App.java
- Demonstrates the creation and usage of various messaging service instances.
- 
-Email.java
- Represents an email message with recipient, subject, and body fields.
- 
-Message.java
- Defines methods for setting recipient, subject, and body for messages.
- 
- 
-MessagingService.java
- Provides common messaging functionalities for different message types.
- 
- 
-SMS.java
- Represents an SMS message with recipient and content fields.
- 
- 
-MultimediaMessage.java
- Extends Message to include multimedia content like images or videos.
- 
- 
-TextMessage.java
- Represents a basic text message with content management.
- 
- 
-WhatsApp.java
- Represents a WhatsApp message with recipient and content fields.
+### Abstraction and Implementation
+
+- **Message Class**:
+  The `Message` class defines the message structure and delegates sending functionality to the `MessagingService`. This separation allows for independent changes to the message types and the methods of sending them.
+
+### Separation of Concerns
+
+- **Decoupling**:
+  By decoupling message construction (abstraction) from message sending (implementation), the Bridge Pattern facilitates the independent evolution of both components. This design makes it easier to adapt and extend the system without affecting other parts of the codebase.
+
  
  # MINI PROJECT
  # Astronaut Daily Schedule Organizer
