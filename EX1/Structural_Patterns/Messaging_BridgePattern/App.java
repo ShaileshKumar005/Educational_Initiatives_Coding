@@ -1,4 +1,4 @@
-package Educational_Initiatives_Coding.EX1.Structural_Patterns.Messaging_BuilderPattern;
+package Educational_Initiatives_Coding.EX1.Structural_Patterns.Messaging_BridgePattern;
 public class App {
     public static void main(String[] args) {
         MessagingService emailService = new EmailService();
