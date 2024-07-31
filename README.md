@@ -6,7 +6,7 @@
 
 
 ### Customer Support Ticket Management
-The Customer Support Ticket Management system uses the Observer pattern to notify relevant parties about ticket updates and the Chain of Responsibility pattern to route tickets through various handlers based on their type or severity. This design enables real-time updates and flexible ticket processing.
+The Customer Support Ticket Management system uses the Observer pattern to notify relevant parties about ticket updates and the Command pattern to route tickets through various handlers based on their type or severity. This design enables real-time updates and flexible ticket processing.
 
 ### Home Automation - Light Use Case
 The Home Automation - Light Use Case leverages the Command pattern to encapsulate light control operations as commands and the Strategy pattern to manage different light control algorithms based on user preferences or environmental conditions. This setup provides flexible and dynamic lighting management.
